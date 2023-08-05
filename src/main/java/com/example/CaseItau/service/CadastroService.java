@@ -26,9 +26,11 @@ import java.util.Optional;
 @Service
 public class CadastroService {
 
-    @Autowired
-    private CadastroRepository cadastroRepository;
+    private final CadastroRepository cadastroRepository;
 
+    public CadastroService(CadastroRepository cadastroRepository) {
+        this.cadastroRepository = cadastroRepository;
+    }
 
     public Optional<Cadastro> listarCadastroId(Long id) {
         return cadastroRepository.findById(id);
