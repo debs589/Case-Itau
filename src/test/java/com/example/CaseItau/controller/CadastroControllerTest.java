@@ -2,8 +2,6 @@ package com.example.CaseItau.controller;
 
 import com.example.CaseItau.model.Cadastro;
 import com.example.CaseItau.service.CadastroService;
-import org.aspectj.lang.annotation.Before;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -20,7 +18,6 @@ import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
 @ExtendWith(MockitoExtension.class)

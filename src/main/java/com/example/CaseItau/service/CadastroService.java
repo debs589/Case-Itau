@@ -54,8 +54,6 @@ public class CadastroService {
         return cadastroRepository.save(cadastro);
     }
 
-
-    @Transactional
     public boolean deletarCadastro(Long id) {
         return cadastroRepository.findById(id)
                 .map(cadastro -> {
